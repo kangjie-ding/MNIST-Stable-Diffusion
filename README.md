@@ -25,6 +25,12 @@ diffusion.ddim_fashion_sample(unet_model, embeddings, 8, sampling_steps=50, chan
 
 ## 📊 Results
 On the MNIST dataset, after training for 50 epochs with 1000 timesteps, we obtain the following results using 50-step DDIM sampling:
+```bash
+text_number = ['1', '8', '1', '1',
+                   '2', '3', '4', '5',
+                   '6', '7', '0', '2',
+                   '9', '2', '0', '2']
+```
 ![genertating_results](assets/Figure_1.png)
 
 ## 📜 References
