@@ -6,7 +6,7 @@ The main components include:
 - **VAE (Variational Autoencoder)**
 - **DDPM (Denoising Diffusion Probabilistic Model)**
 
-We use **CLIP’s text encoder** to extract text features and apply **cross-attention** to generate images conditioned on text.  
+We use **CLIP’s text encoder** to extract text features and apply **cross-attention** to generate images conditioned on text. Thus, you should download CLIP project in **models/CLIP/**. Here we use clip-vit-base-patch32.
 The model is trained on the **MNIST dataset** and can generate handwritten digit images based on the input digit text.
 
 ## 🚀 Usage
