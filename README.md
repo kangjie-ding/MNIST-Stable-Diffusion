@@ -14,11 +14,24 @@ Run the following command to test:
 ```bash
 python ./generating_test.py
 ```
-We also implement DDIM accelerated sampling, which can be invoked as:
+Besides traditional DDPM sampling:
+```bash
+diffusion.ddpm_fashion_sample(unet_model, embeddings, 8, channels, batch_size=batch_size),
+```
+we also implement DDIM accelerated sampling, which can be invoked as:
 ```bash
 diffusion.ddim_fashion_sample(unet_model, embeddings, 8, sampling_steps=50, channels=channels, batch_size=batch_size)
 ```
 
 ## 📊 Results
 On the MNIST dataset, after training for 50 epochs with 1000 timesteps, we obtain the following results using 50-step DDIM sampling:
+![genertating_results](assets/Figure_1.png)
 
+## 📜 References
+[DDPM](https://arxiv.org/abs/2006.11239)
+
+[DDIM](https://openreview.net/pdf?id=St1giarCHLP)
+
+[VAE](https://arxiv.org/pdf/1312.6114)
+
+[Stable Diffusion](https://arxiv.org/abs/2112.10752)
