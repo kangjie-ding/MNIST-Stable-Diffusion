@@ -1,0 +1,28 @@
+{
+    "data_settings":{
+        "dataset_name": "MNIST",
+        "batch_size": 128,
+        "channels": 1,
+        "image_size": 28
+    },
+
+    "model_settings":{
+        "fc_dim": 128,
+        "latent_dim": 64,
+        "conv_dims": [32, 64]
+    },
+    
+    "training_settings":{
+        "epochs": 50,
+        "lr":5e-4, 
+        "accumulation_steps": 10,
+        "amp_dtype": "float16",
+        "grad_clip_norm": 1.0
+    },
+
+    "path_settings":{
+        "weight_save_dir": "outputs",
+        "log_dir": "logs",
+        "data_root": "C:\\Users\\92595\\Desktop\\Deep Learning\\DATASETS\\MNIST"
+    }
+}
